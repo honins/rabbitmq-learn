@@ -24,7 +24,7 @@
 支持HTTP API: [RabbitMQ Management HTTP API](https://pulse.mozilla.org/api/)
 
 ### 原理
-![原理图](../../src/image/20201123170216.png)
+![原理图](static/20201123170216.png)
 ### 大致流程
 
 1. consumer注册队列监听器到Broker（RabbitMQ）
