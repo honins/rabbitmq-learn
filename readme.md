@@ -91,7 +91,7 @@ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-manag
 安装完成后，浏览器输入`http://host:15672`
 输入用户名`guest`，密码`guest`，登陆成功后可看到监控管理界面
 
-###编码
+### 编码
 
 创建2个消息实现消息的收发功能。
 
