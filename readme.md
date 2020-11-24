@@ -82,6 +82,19 @@ producer只是提供Exchange和Routing key，broker根据producer提供的Exchan
 - Fanout类型的Exchange的Routing key就是放弃匹配。达到广播的效果。
 匹配肯定都是限制在同一个Exchange中的，也就是相同的Exchange进行匹配。
 ### 使用
+### 安装
+首先查看官方文档，查看下载安装方式，这里使用docker安装，这里安装的是消息中间件的服务端
+
+```
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```
+安装完成后，浏览器输入`http://host:15672`
+输入用户名`guest`，密码`guest`，登陆成功后可看到监控管理界面
+
+###编码
+
+创建2个消息实现消息的收发功能。
+
 创建`rabbitmq-provider`项目
 
 导入依赖
