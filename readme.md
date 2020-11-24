@@ -125,7 +125,7 @@ spring:
   application:
     name: rabbitmq-provider
   rabbitmq:
-    host: 172.29.1.61
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
@@ -247,7 +247,7 @@ spring:
   application:
     name: rabbitmq-consumer
   rabbitmq:
-    host: 172.29.1.61
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
@@ -523,7 +523,7 @@ B  收到queueB消息：LogMessage(id=0, msg=topic message, hello!, logLevel=err
 
 postman测试：
 ```
-http://guest:guest@172.29.1.61:15672/api/vhosts
+http://guest:guest@127.0.0.1:15672/api/vhosts
 ```
 返回：
 ```json
